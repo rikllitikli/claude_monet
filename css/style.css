@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  max-width: 1110px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 11; }
+  header h2 {
+    position: absolute;
+    left: 40%;
+    top: 7px; }
+  header .bg-light {
+    background-color: white !important; }
+  header .navbar-light .navbar-nav .nav-link {
+    color: #696988;
+    font-size: 12px;
+    font-weight: 500; }
+  header .form-control {
+    outline: none;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important; }
+  header .form-inline .form-control {
+    border-radius: 0; }
+  header button[type="reset"] {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 65px;
+    color: #666;
+    border: 0;
+    display: none;
+    padding: 0 10px;
+    background: none;
+    transition: background 200ms;
+    outline: none; }
+    header button[type="reset"]:hover {
+      background-color: #eee; }
+  header input:valid ~ button[type="reset"] {
+    display: block; }
+  header .form-inline .form-control:focus {
+    background-color: #e0e0e0;
+    transition: 0.3s; }
+  header .btn:not(:disabled):not(.disabled) {
+    border: none;
+    color: #3edd94; }
+  header .btn:not(:disabled):not(.disabled):hover {
+    background-color: white; }
+
+.screen_one {
+  padding: 84px 0 30px;
+  background-color: rgba(57, 80, 155, 0.75); }
+  .screen_one .range {
+    background-color: #e0e0e5; }
+    .screen_one .range a {
+      padding: 12px 18px;
+      font-size: 12px;
+      color: black;
+      font-weight: 500;
+      text-decoration: none;
+      text-align: center; }
+    .screen_one .range a:nth-child(6) {
+      border: none; }
+    .screen_one .range a:hover {
+      background-color: #a8a8ac;
+      transition: 0.3s; }
+    .screen_one .range a:after {
+      display: inline-block;
+      content: "";
+      background-color: black;
+      width: 1px;
+      height: 14px;
+      position: absolute;
+      right: 0;
+      top: 14px;
+      z-index: 10; }
+    .screen_one .range a:nth-child(6):after {
+      display: none; }
+
+/*# sourceMappingURL=style.css.map */
