@@ -68,10 +68,13 @@ header{
   }
 }
 
-.screen_one{
+.bg_pating{
   padding: 84px 0 30px;
   background-color: rgba(57, 80, 155, 75%);
   margin-bottom: 55px;
+}
+
+.screen{
   .range{
     background-color: #e0e0e5;
     margin-bottom: 50px;
@@ -108,12 +111,22 @@ header{
        display: none;
     }
   }
-  .buy{
+  .pating{
     background-image: url("../img/buy.svg");
+    padding: 45px 0;
+    p{
+      background-color: #0f2b8c;
+    }
+  }
+  .pating:hover{
+    p{
+        color: #0f2b8c;
+    }
+  }
+  .buy{
     background-repeat: no-repeat;
     width:175px;
     height:147px;
-    padding: 45px 0;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -128,7 +141,6 @@ header{
     }
     p{
       margin-left: 7px;
-      background-color: #0f2b8c;
       padding: 13px 11px;
       text-align: center;
       font-size: 11px;
@@ -142,27 +154,36 @@ header{
     transition: 0.3s;
     p{
       background-color: white;
-      color: #0f2b8c;
       transition: 0.4s;
       -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
       -moz-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
       box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
     }
   }
-
+    .pating_two{
+      background-image: url("../img/buy_two.svg");
+      padding: 45px 0;
+      p{
+        background-color: #0f2b8c;
+      }
+    }
+  .pating_two:hover{
+    p{
+      color: #0f2b8c;
+    }
+  }
   .buy_two{
-    background-image: url("../img/buy_two.svg");
     background-repeat: no-repeat;
     width:175px;
     height:147px;
-    margin-right: 32px;
+    margin-right: 22px;
     padding: 45px 0;
     text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     h4{
-      margin-right: 7px;
+      margin-right: 20px;
       color: white;
       font-size: 14px;
       font-weight: 300;
@@ -170,8 +191,7 @@ header{
       margin-bottom: 10px;
     }
     p{
-      margin-right: 7px;
-      background-color: #0f2b8c;
+      margin-right: 20px;
       padding: 13px 11px;
       text-align: center;
       font-size: 11px;
@@ -185,17 +205,26 @@ header{
     transition: 0.3s;
     p{
       background-color: white;
-      color: #0f2b8c;
       transition: 0.4s;
       -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
       -moz-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
       box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
     }
   }
+  .banner{
+    img{
+      max-width: 518px;
+      width: 100%;
+    }
+  }
 }
-
-.carusel_pat{
+.bg_pat{
   background-color: #909dc7;
+}
+.bg_pen{
+  background-color: #a7a8a8;
+}
+.carusel_pat{
   padding: 20px;
   margin-bottom: 40px;
   a{
@@ -208,37 +237,206 @@ header{
     color: white;
     font-size: 12px;
   }
-  .owl-dots {
-    position: absolute;
-    width: 100%;
-    bottom: 20px;
-    text-align: center;
-  }
+}
+
+.owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  text-align: center;
+}
 
 
-  .owl-dot span{
-    display: inline-block;
-    background-color: white;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
-    margin-right: 10px;
-  }
+.owl-dot span{
+  display: inline-block;
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
 
-  .owl-dot.active span {
-    background-color: white;
-    width: 15px;
-    height: 15px;
-    position: relative;
-    top: 5px;
-    transition: 0.3s;
-    border: none;
-  }
+.owl-dot.active span {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 5px;
+  transition: 0.3s;
+  border: none;
 }
 
 .pencil{
   padding: 30px 0;
   background-color: #a7a8a8;
   margin-bottom: 55px;
+  .pencil_buy{
+    background-image: url("../img/pen_one.svg");
+    background-repeat: no-repeat;
+    width:175px;
+    height:147px;
+    padding: 55px 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      background-color: #4c4d4d;
+      padding: 13px 11px;
+      text-align: center;
+      font-size: 11px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  .pencil_buy:hover{
+    -webkit-filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
+    transition: 0.3s;
+    p{
+      background-color: white;
+      color: #4c4d4d;
+      transition: 0.4s;
+      -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+      -moz-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+      box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+    }
+  }
+  .pencil_buy_two{
+    background-image: url("../img/pen_two.svg");
+    background-repeat: no-repeat;
+    width:175px;
+    height:147px;
+    margin-left: 15px;
+    padding: 55px 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      margin-right: 20px;
+      background-color: #4c4d4d;
+      padding: 13px 11px;
+      text-align: center;
+      font-size: 11px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  .pencil_buy_two:hover{
+    -webkit-filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
+    transition: 0.3s;
+    p{
+      background-color: white;
+      color: #4c4d4d;
+      transition: 0.4s;
+      -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+      -moz-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+      box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+    }
+  }
+  .img_buy{
+    width: 100%;
+  }
+  .banner{
+    img{
+      max-width: 518px;
+      width: 100%;
+    }
+  }
+}
+
+.bg_mobert{
+  background-color: #f8a25e;
+  padding: 30px 0;
+  .mobert{
+    background-image: url("../img/mobet_buy.svg");
+    padding: 55px 0;
+  }
+  .mobert_two{
+    background-image: url("../img/mobet_buy_two.svg");
+    padding: 55px 0;
+  }
+  p{
+    background-color: #a25111;
+  }
+}
+.mobert:hover{
+  p{
+    color: #a25111;
+  }
+}
+.mobert_two:hover{
+  p{
+    color: #a25111;
+  }
+}
+.brush{
+  padding: 10px 0;
+  background-color: #34a78b;
+  .brush_buy{
+    background-image: url("../img/buy_brush.svg");
+    background-repeat: no-repeat;
+    width:269px;
+    height:193px;
+    text-decoration: none;
+    display: flex;
+    padding: 74px 0;
+    flex-direction: column;
+    align-items: center;
+    p{
+      margin-right:20px;
+      color: white;
+      font-size: 16px;
+      background-color: #187b63;
+      padding: 17px;
+      text-align: center;
+    }
+  }
+  .brush_img{
+    padding-top: 20px;
+    img{
+      margin-bottom: 20px;
+    }
+  }
+}
+.brush_buy:hover{
+  -webkit-filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
+  transition: 0.3s;
+  p{
+    background-color: white;
+    color: #187b63;
+    transition: 0.4s;
+    -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+    -moz-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+    box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+  }
+}
+.clay{
+  background-color: #b35c5c;
+  padding: 30px 0;
+  .clay_buy{
+    background-image: url("../img/clay_buy_two.svg");
+    padding: 55px 0;
+  }
+  p{
+    background-color: #9a2525;
+  }
+  .clay_buy:hover{
+    p{
+      color: #9a2525;
+    }
+  }
+  .clay_buy_two{
+    background-image: url("../img/clay_buy.svg");
+    padding: 55px 0;
+  }
+  .clay_buy_two:hover{
+    p{
+      color: #9a2525;
+    }
+  }
 }
 
