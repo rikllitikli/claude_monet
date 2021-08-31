@@ -431,7 +431,8 @@ footer {
     border-radius: 0;
     outline: none;
     padding: 5px;
-    color: #64676d; }
+    color: #64676d;
+    font-size: 11px; }
   footer form button {
     color: #64676d;
     background-color: white;
