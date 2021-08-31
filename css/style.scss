@@ -480,5 +480,65 @@ header{
 }
 footer{
   padding: 42px 0;
+  h3{
+    font-size: 14px;
+    color: black;
+    margin-bottom: 30px;
+  }
+  .service{
+    border-right: solid 1px black;
+    a{
+      display: block;
+      max-width: 130px;
+      color: #64676d;
+      text-decoration: none;
+      font-size: 11px;
+      margin-bottom: 15px;
+      line-height: 13px;
+    }
+  }
+  .icon{
+    border-right: solid 1px black;
+    a{
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 30px;
+      color: black;
+      border: solid 1px black;
+      padding: 6px 8px;
+      line-height: 0;
+      font-size: 28px;
+    }
+    a:nth-last-child(3){
+      padding: 6px 11px;
+    }
+    a:hover{
+      background-color: black;
+      color: white;
+      transition: 0.3s;
+    }
+  }
+  form{
+    p{
+      font-size: 14px;
+      color: #64676d;
+      margin-bottom: 10px;
+    }
+    textarea{
+      width: 100%;
+      resize: none;
+      height: 60px;
+      margin-bottom: 10px;
+      border-radius: 0;
+      outline: none;
+      padding: 5px;
+      color: #64676d;
+    }
+    button{
+      color: #64676d;
+      background-color: white;
+      padding: 10px 34px;
+    }
+  }
 }
 
