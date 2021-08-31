@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 header{
   max-width: 1110px;
   width: 100%;
@@ -75,6 +80,7 @@ header{
 }
 
 .screen{
+  position: relative;
   .range{
     background-color: #e0e0e5;
     margin-bottom: 50px;
@@ -111,19 +117,9 @@ header{
        display: none;
     }
   }
-  .pating{
+  .buy{
     background-image: url("../img/buy.svg");
     padding: 45px 0;
-    p{
-      background-color: #0f2b8c;
-    }
-  }
-  .pating:hover{
-    p{
-        color: #0f2b8c;
-    }
-  }
-  .buy{
     background-repeat: no-repeat;
     width:175px;
     height:147px;
@@ -132,7 +128,7 @@ header{
     flex-direction: column;
     align-items: center;
     h4{
-      margin-left: 7px;
+      margin-left: 15px;
       color: white;
       font-size: 14px;
       font-weight: 300;
@@ -140,7 +136,8 @@ header{
       margin-bottom: 10px;
     }
     p{
-      margin-left: 7px;
+      background-color: #0f2b8c;
+      margin-left: 15px;
       padding: 13px 11px;
       text-align: center;
       font-size: 11px;
@@ -148,11 +145,13 @@ header{
       color: white;
     }
   }
+
   .buy:hover{
     -webkit-filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
     filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
     transition: 0.3s;
     p{
+      color: #0f2b8c;
       background-color: white;
       transition: 0.4s;
       -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
@@ -160,30 +159,18 @@ header{
       box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
     }
   }
-    .pating_two{
-      background-image: url("../img/buy_two.svg");
-      padding: 45px 0;
-      p{
-        background-color: #0f2b8c;
-      }
-    }
-  .pating_two:hover{
-    p{
-      color: #0f2b8c;
-    }
-  }
   .buy_two{
+    background-image: url("../img/buy_two.svg");
+    padding: 45px 0;
     background-repeat: no-repeat;
     width:175px;
     height:147px;
-    margin-right: 22px;
-    padding: 45px 0;
     text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     h4{
-      margin-right: 20px;
+      margin-right: 10px;
       color: white;
       font-size: 14px;
       font-weight: 300;
@@ -191,7 +178,8 @@ header{
       margin-bottom: 10px;
     }
     p{
-      margin-right: 20px;
+      background-color: #0f2b8c;
+      margin-right: 10px;
       padding: 13px 11px;
       text-align: center;
       font-size: 11px;
@@ -199,11 +187,13 @@ header{
       color: white;
     }
   }
+
   .buy_two:hover{
     -webkit-filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
     filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
     transition: 0.3s;
     p{
+      color: #0f2b8c;
       background-color: white;
       transition: 0.4s;
       -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
@@ -217,6 +207,58 @@ header{
       width: 100%;
     }
   }
+  @include max-screen(992px){
+    .adaptive{
+        position: relative;
+      top: 414px;
+      z-index: 11;
+      img{
+        position: relative;
+        right: 15px;
+        width: 137px;
+      }
+      div:nth-last-child(1){
+        img{
+          left: 18px;
+        }
+      }
+    }
+    .buy{
+      position: absolute;
+      right: 380px;
+      width:150px;
+      padding: 34px 0;
+    }
+    .buy_two{
+      background-image: url("../img/buy.svg");
+      position: absolute;
+      left: 532px;
+      width:150px;
+      z-index: 10;
+      padding: 34px 0;
+      h4{
+        margin-right: 0;
+        margin-left: 15px;
+      }
+      p{
+        margin-right: 0;
+        margin-left: 15px;
+      }
+    }
+    .banner{
+      img{
+        max-width: 690px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        bottom: 150px;
+      }
+    }
+  }
+  @include max-screen(767px){
+
+  }
+
 }
 .bg_pat{
   background-color: #909dc7;
@@ -266,218 +308,6 @@ header{
   border: none;
 }
 
-.pencil{
-  padding: 30px 0;
-  background-color: #a7a8a8;
-  margin-bottom: 55px;
-  .pencil_buy{
-    background-image: url("../img/pen_one.svg");
-    background-repeat: no-repeat;
-    width:175px;
-    height:147px;
-    padding: 55px 0;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    p{
-      background-color: #4c4d4d;
-      padding: 13px 11px;
-      text-align: center;
-      font-size: 11px;
-      font-weight: bold;
-      color: white;
-    }
-  }
-  .pencil_buy:hover{
-    -webkit-filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
-    filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
-    transition: 0.3s;
-    p{
-      background-color: white;
-      color: #4c4d4d;
-      transition: 0.4s;
-      -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-      -moz-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-      box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-    }
-  }
-  .pencil_buy_two{
-    background-image: url("../img/pen_two.svg");
-    background-repeat: no-repeat;
-    width:175px;
-    height:147px;
-    margin-left: 15px;
-    padding: 55px 0;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    p{
-      margin-right: 20px;
-      background-color: #4c4d4d;
-      padding: 13px 11px;
-      text-align: center;
-      font-size: 11px;
-      font-weight: bold;
-      color: white;
-    }
-  }
-  .pencil_buy_two:hover{
-    -webkit-filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
-    filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
-    transition: 0.3s;
-    p{
-      background-color: white;
-      color: #4c4d4d;
-      transition: 0.4s;
-      -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-      -moz-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-      box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-    }
-  }
-  .img_buy{
-    width: 100%;
-  }
-  .banner{
-    img{
-      max-width: 518px;
-      width: 100%;
-    }
-  }
-}
-
-.bg_mobert{
-  background-color: #f8a25e;
-  padding: 30px 0;
-  .mobert{
-    background-image: url("../img/mobet_buy.svg");
-    padding: 55px 0;
-  }
-  .mobert_two{
-    background-image: url("../img/mobet_buy_two.svg");
-    padding: 55px 0;
-  }
-  p{
-    background-color: #a25111;
-  }
-}
-.mobert:hover{
-  p{
-    color: #a25111;
-  }
-}
-.mobert_two:hover{
-  p{
-    color: #a25111;
-  }
-}
-.brush{
-  padding: 10px 0;
-  background-color: #34a78b;
-  .brush_buy{
-    background-image: url("../img/buy_brush.svg");
-    background-repeat: no-repeat;
-    width:269px;
-    height:193px;
-    text-decoration: none;
-    display: flex;
-    padding: 74px 0;
-    flex-direction: column;
-    align-items: center;
-    p{
-      margin-right:20px;
-      color: white;
-      font-size: 16px;
-      background-color: #187b63;
-      padding: 17px;
-      text-align: center;
-      font-weight: bold;
-    }
-  }
-  .brush_img{
-    padding-top: 20px;
-    img{
-      margin-bottom: 20px;
-    }
-  }
-}
-.brush_buy:hover{
-  -webkit-filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
-  filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
-  transition: 0.3s;
-  p{
-    background-color: white;
-    color: #187b63;
-    transition: 0.4s;
-    -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-    -moz-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-    box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-  }
-}
-.clay{
-  background-color: #b35c5c;
-  padding: 30px 0;
-  .clay_buy{
-    background-image: url("../img/clay_buy_two.svg");
-    padding: 55px 0;
-  }
-  p{
-    background-color: #9a2525;
-  }
-  .clay_buy:hover{
-    p{
-      color: #9a2525;
-    }
-  }
-  .clay_buy_two{
-    background-image: url("../img/clay_buy.svg");
-    padding: 55px 0;
-  }
-  .clay_buy_two:hover{
-    p{
-      color: #9a2525;
-    }
-  }
-}
-.canvas{
-  padding: 30px 0;
-  background-color: #a7ae50;
-    .canvas_buy{
-      background-image: url("../img/canvas_buy.svg");
-      width:100%;
-      height:194px;
-      background-repeat: no-repeat;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-      padding: 75px 0;
-      margin-left: 15px;
-      p{
-        text-align: center;
-        color: white;
-        font-size: 16px;
-        background-color: #798214;
-        padding: 17px;
-        font-weight: bold;
-        margin-right: 95px;
-      }
-    }
-  .canvas_buy:hover{
-    -webkit-filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
-    filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
-    transition: 0.3s;
-    p{
-      background-color: white;
-      color: #798214;
-      transition: 0.4s;
-      -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-      -moz-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-      box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-    }
-  }
-}
 footer{
   padding: 42px 0;
   h3{
