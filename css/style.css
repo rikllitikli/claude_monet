@@ -11,7 +11,7 @@ header {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  z-index: 11; }
+  z-index: 15; }
   header h2 {
     position: absolute;
     left: 40%;
@@ -167,24 +167,28 @@ header {
     width: 100%; }
   @media screen and (max-width: 992px) {
     .screen .adaptive {
+      padding: 0;
       position: relative;
-      top: 414px;
+      top: 432px;
       z-index: 11; }
       .screen .adaptive img {
         position: relative;
         right: 15px;
         width: 137px; }
       .screen .adaptive div:nth-last-child(1) img {
-        left: 18px; }
+        left: 41px;
+        width: 137px; }
+      .screen .adaptive div:nth-last-child(2) img {
+        margin-left: 15px; }
     .screen .buy {
       position: absolute;
-      right: 380px;
+      right: 416px;
       width: 150px;
       padding: 34px 0; }
     .screen .buy_two {
       background-image: url("../img/buy.svg");
       position: absolute;
-      left: 532px;
+      left: 570px;
       width: 150px;
       z-index: 10;
       padding: 34px 0; }
@@ -195,11 +199,47 @@ header {
         margin-right: 0;
         margin-left: 15px; }
     .screen .banner img {
-      max-width: 690px;
+      max-width: 720px;
       width: 100%;
       margin: auto;
       position: relative;
       bottom: 150px; } }
+  @media screen and (max-width: 767px) {
+    .screen .adaptive {
+      top: 326px; }
+      .screen .adaptive img {
+        height: 126px; }
+      .screen .adaptive div:nth-last-child(1) img {
+        left: 0; }
+    .screen .buy {
+      right: 0;
+      bottom: 126px;
+      position: absolute; }
+    .screen .buy_two {
+      left: 0;
+      top: 147px;
+      position: relative; }
+    .screen .banner img {
+      bottom: 293px; } }
+  @media screen and (max-width: 575px) {
+    .screen .banner img {
+      bottom: 333px; }
+    .screen .adaptive {
+      top: 320px; }
+    .screen .buy {
+      right: 8px;
+      bottom: 150px;
+      position: absolute; }
+    .screen .buy_two {
+      left: 0;
+      top: 163px;
+      position: relative; } }
+  @media screen and (max-width: 475px) {
+    .screen .adaptive {
+      top: 269px; } }
+  @media screen and (max-width: 400px) {
+    .screen .adaptive {
+      top: 225px; } }
 
 .bg_pat {
   background-color: #909dc7; }

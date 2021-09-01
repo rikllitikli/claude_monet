@@ -17,7 +17,7 @@ header{
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  z-index: 11;
+  z-index: 15;
   h2{
     position: absolute;
     left: 40%;
@@ -209,8 +209,9 @@ header{
   }
   @include max-screen(992px){
     .adaptive{
+      padding: 0;
         position: relative;
-      top: 414px;
+      top: 432px;
       z-index: 11;
       img{
         position: relative;
@@ -219,20 +220,26 @@ header{
       }
       div:nth-last-child(1){
         img{
-          left: 18px;
+          left: 41px;
+          width: 137px;
+        }
+      }
+      div:nth-last-child(2){
+        img{
+          margin-left: 15px;
         }
       }
     }
     .buy{
       position: absolute;
-      right: 380px;
+      right: 416px;
       width:150px;
       padding: 34px 0;
     }
     .buy_two{
       background-image: url("../img/buy.svg");
       position: absolute;
-      left: 532px;
+      left: 570px;
       width:150px;
       z-index: 10;
       padding: 34px 0;
@@ -247,7 +254,7 @@ header{
     }
     .banner{
       img{
-        max-width: 690px;
+        max-width: 720px;
         width: 100%;
         margin: auto;
         position: relative;
@@ -256,9 +263,63 @@ header{
     }
   }
   @include max-screen(767px){
-
+    .adaptive{
+      top: 326px;
+      img{
+        height: 126px;
+      }
+      div:nth-last-child(1){
+        img{
+          left: 0;
+        }
+      }
+    }
+    .buy{
+      right: 0;
+      bottom: 126px;
+      position: absolute;
+    }
+    .buy_two{
+      left: 0;
+      top: 147px;
+      position: relative;
+    }
+    .banner{
+      img{
+        bottom: 293px;
+      }
+    }
   }
-
+  @include max-screen(575px){
+    .banner{
+      img{
+        bottom: 333px;
+      }
+    }
+    .adaptive{
+      top: 320px;
+    }
+    .buy{
+      right: 8px;
+      bottom: 150px;
+      position: absolute;
+    }
+    .buy_two{
+      left: 0;
+      top: 163px;
+      position: relative;
+     }
+  }
+  @include max-screen(475px){
+    .adaptive{
+      top: 269px;
+    }
+  }
+  @include max-screen(400px){
+    .adaptive{
+      top: 225px;
+    }
+  }
 }
 .bg_pat{
   background-color: #909dc7;
