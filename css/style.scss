@@ -348,6 +348,21 @@ header{
   bottom: 20px;
   text-align: center;
 }
+@include max-screen(992px){
+  .owl-dots{
+    left: 47%;
+  }
+}
+@include max-screen(575px){
+  .owl-dots{
+    left: 44%;
+  }
+}
+@include max-screen(413px){
+  .owl-dots{
+    left: 33%;
+  }
+}
 
 
 .owl-dot span{
@@ -368,7 +383,136 @@ header{
   transition: 0.3s;
   border: none;
 }
+.pencil{
+  background-color: #a7a8a8;
+  padding: 20px 0;
+  margin-bottom: 50px;
+  .buy_one{
+    background-image: url("../img/pen_two.svg");
+    p{
+      margin-right: 7px;
+    }
+  }
 
+  .buy_one:hover, .buy_two:hover{
+    -webkit-filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.2));
+    transition: 0.3s;
+    p{
+      color: #4c4d4d;
+      background-color: white;
+      transition: 0.4s;
+      -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+      -moz-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+      box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+    }
+  }
+  .buy{
+    background-repeat: no-repeat;
+    width:175px;
+    height:147px;
+    padding: 55px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  p{
+    background-color: #4c4d4d;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    padding: 13px 11px;
+  }
+  .buy_two{
+    background-image: url("../img/pen_one.svg");
+
+    p{
+      margin-left: 11px;
+    }
+  }
+  .banner{
+    img{
+      max-width: 518px;
+      width: 100%;
+    }
+  }
+  @include max-screen(991px){
+    .adaptive{
+      position: relative;
+      img{
+        width: 137px;
+      }
+      div:nth-last-child(1){
+        img{
+          width: 140px;
+          position: relative;
+          left: 53px;
+        }
+      }
+      div:nth-last-child(2){
+        img{
+          width: 136px;
+          position: relative;
+          right: 15px;
+        }
+      }
+      .buy_one{
+        background-image: url("../img/pen_one.svg");
+        position: absolute;
+        right: 57px;
+        width:150px;
+        padding: 45px 0;
+        p{
+          margin-left: 15px;
+        }
+      }
+      .buy_two{
+        right: -15px;
+        width:150px;
+        padding: 45px 0;
+        position: absolute;
+        p{
+          margin-right: 0;
+          margin-left: 14px;
+        }
+      }
+    }
+    .banner{
+      img{
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @include max-screen(767px){
+    .adaptive{
+      div:nth-last-child(1){
+        margin-bottom: 21px!important;
+        img{
+          width: 136px!important;
+          left: -15px!important;
+        }
+      }
+    }
+    .buy_one{
+      top: 0;
+      right: -15px!important;
+    }
+  }
+  @include max-screen(575px){
+    .adaptive{
+      .buy_one{
+        top: 8px;
+        right: -7px!important;
+      }
+      .buy_two{
+        right: -7px!important;
+        height: 123px!important;
+      }
+    }
+  }
+}
 footer{
   padding: 42px 0;
   h3{
@@ -409,6 +553,7 @@ footer{
       transition: 0.3s;
     }
   }
+
   form{
     p{
       font-size: 14px;
