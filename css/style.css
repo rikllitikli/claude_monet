@@ -90,9 +90,28 @@ header {
       z-index: 10; }
     .screen .range a:nth-child(6):after {
       display: none; }
-  .screen .buy {
+  .screen .buy_pat_two {
     background-image: url("../img/buy.svg");
-    padding: 45px 0;
+    padding: 45px 0; }
+    .screen .buy_pat_two p {
+      background-color: #0f2b8c; }
+  .screen .buy_pat_two:hover p {
+    color: #0f2b8c; }
+  .screen .buy_one h4 {
+    margin-left: 15px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 10px; }
+  .screen .buy_one p {
+    margin-left: 15px;
+    padding: 13px 11px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: white; }
+  .screen .buy {
     background-repeat: no-repeat;
     width: 175px;
     height: 147px;
@@ -100,68 +119,37 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .screen .buy h4 {
-      margin-left: 15px;
-      color: white;
-      font-size: 14px;
-      font-weight: 300;
-      text-align: center;
-      margin-bottom: 10px; }
-    .screen .buy p {
-      background-color: #0f2b8c;
-      margin-left: 15px;
-      padding: 13px 11px;
-      text-align: center;
-      font-size: 11px;
-      font-weight: bold;
-      color: white; }
   .screen .buy:hover {
     -webkit-filter: drop-shadow(0px 12px 3px rgba(0, 0, 0, 0.2));
     filter: drop-shadow(0px 12px 3px rgba(0, 0, 0, 0.2));
     transition: 0.3s; }
     .screen .buy:hover p {
-      color: #0f2b8c;
       background-color: white;
       transition: 0.4s;
       -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
       -moz-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
       box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4); }
-  .screen .buy_two {
+  .screen .buy_pat {
     background-image: url("../img/buy_two.svg");
-    padding: 45px 0;
-    background-repeat: no-repeat;
-    width: 175px;
-    height: 147px;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .screen .buy_two h4 {
-      margin-right: 10px;
-      color: white;
-      font-size: 14px;
-      font-weight: 300;
-      text-align: center;
-      margin-bottom: 10px; }
-    .screen .buy_two p {
-      background-color: #0f2b8c;
-      margin-right: 10px;
-      padding: 13px 11px;
-      text-align: center;
-      font-size: 11px;
-      font-weight: bold;
-      color: white; }
-  .screen .buy_two:hover {
-    -webkit-filter: drop-shadow(0px 12px 3px rgba(0, 0, 0, 0.2));
-    filter: drop-shadow(0px 12px 3px rgba(0, 0, 0, 0.2));
-    transition: 0.3s; }
-    .screen .buy_two:hover p {
-      color: #0f2b8c;
-      background-color: white;
-      transition: 0.4s;
-      -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-      -moz-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
-      box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4); }
+    padding: 45px 0; }
+    .screen .buy_pat p {
+      background-color: #0f2b8c; }
+  .screen .buy_pat:hover p {
+    color: #0f2b8c; }
+  .screen .buy_two h4 {
+    margin-right: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 10px; }
+  .screen .buy_two p {
+    margin-right: 10px;
+    padding: 13px 11px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: white; }
   .screen .banner img {
     max-width: 518px;
     width: 100%; }
@@ -292,7 +280,7 @@ header {
 
 .pencil {
   background-color: #a7a8a8;
-  padding: 20px 0;
+  padding: 30px 0;
   margin-bottom: 50px; }
   .pencil .buy_one {
     background-image: url("../img/pen_two.svg"); }
@@ -380,6 +368,113 @@ header {
       right: -7px !important;
       height: 123px !important; } }
 
+.bg_molbert {
+  padding: 30px 0;
+  background-color: #f8a25e; }
+  .bg_molbert .buy_molbert {
+    background-image: url("../img/buy_molbet.svg");
+    padding: 57px 0; }
+    .bg_molbert .buy_molbert p {
+      background-color: #a25111; }
+  .bg_molbert .buy_molbert_two {
+    background-image: url("../img/buy_molbert_two.svg");
+    padding: 57px 0; }
+    .bg_molbert .buy_molbert_two p {
+      background-color: #a25111; }
+  .bg_molbert .buy_molbert:hover p {
+    color: #a25111; }
+  .bg_molbert .buy_molbert_two:hover p {
+    color: #a25111; }
+
+@media screen and (max-width: 991px) {
+  .buy_molbert {
+    padding: 45px 0 !important; }
+
+  .buy_molbert_two {
+    background-image: url("../img/buy_molbet.svg") !important;
+    padding: 45px 0 !important; } }
+.brush {
+  background-color: #67bda8;
+  padding: 30px; }
+  .brush .buy {
+    background-image: url("../img/buy_brush.svg");
+    background-repeat: no-repeat;
+    width: 269px;
+    height: 193px;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; }
+    .brush .buy p {
+      color: white;
+      padding: 17px;
+      font-size: 16px;
+      background-color: #187b63;
+      font-weight: bold;
+      margin-right: 24px; }
+  .brush div:nth-child(3) div:nth-child(1) img {
+    margin-bottom: 20px; }
+  .brush .buy:hover {
+    -webkit-filter: drop-shadow(0px 12px 3px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 12px 3px rgba(0, 0, 0, 0.2));
+    transition: 0.3s; }
+    .brush .buy:hover p {
+      color: #187b63;
+      background-color: white;
+      transition: 0.4s;
+      -webkit-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+      -moz-box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4);
+      box-shadow: 0px 15px 10px -10px rgba(3, 59, 101, 0.4); }
+  @media screen and (max-width: 1200px) {
+    .brush .buy {
+      padding: 60px 0; }
+      .brush .buy p {
+        margin-right: 8px; } }
+  @media screen and (max-width: 991px) {
+    .brush .buy {
+      background-image: url("../img/buy_andaptive.svg");
+      width: 100%;
+      padding: 69px 0; }
+      .brush .buy p {
+        margin-right: 0; }
+    .brush div:nth-child(3) {
+      display: none; }
+    .brush .banner img {
+      width: 100%;
+      margin-bottom: 20px; } }
+  @media screen and (max-width: 767px) {
+    .brush .buy {
+      background-image: url("../img/buy_andaptive_two.svg"); } }
+  @media screen and (max-width: 575px) {
+    .brush .buy {
+      background-image: url("../img/buy_andaptive_three.svg"); } }
+
+.bg_clay {
+  padding: 30px 0;
+  background-color: #b35c5c; }
+  .bg_clay .buy_clay {
+    background-image: url("../img/buy_clay.svg");
+    padding: 57px 0; }
+    .bg_clay .buy_clay p {
+      background-color: #9a2525; }
+  .bg_clay .buy_clay_two {
+    background-image: url("../img/buy_clay_two.svg");
+    padding: 57px 0; }
+    .bg_clay .buy_clay_two p {
+      background-color: #9a2525; }
+  .bg_clay .buy_clay:hover p {
+    color: #9a2525; }
+  .bg_clay .buy_clay_two:hover p {
+    color: #9a2525; }
+
+@media screen and (max-width: 991px) {
+  .buy_clay {
+    padding: 45px 0 !important; }
+
+  .buy_clay_two {
+    background-image: url("../img/buy_clay.svg") !important;
+    padding: 45px 0 !important; } }
 footer {
   padding: 42px 0; }
   footer h3 {
