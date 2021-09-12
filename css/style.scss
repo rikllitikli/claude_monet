@@ -219,7 +219,7 @@ header{
       }
       div:nth-last-child(1){
         img{
-          left: 41px;
+          left: 56px;
           width: 137px;
         }
       }
@@ -665,6 +665,83 @@ header{
   .buy_clay_two{
     background-image: url("../img/buy_clay.svg") !important;
     padding: 45px 0!important;
+  }
+}
+.canvas{
+  padding: 30px 0;
+  background-color: #a7ae50;
+  .buy{
+    background-image: url("../img/buy_canvas.svg");
+    background-repeat: no-repeat;
+    padding: 69px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    p{
+      color: white;
+      font-size: 16px;
+      padding: 17px;
+      background-color: #798214;
+      margin-right: 64px;
+    }
+  }
+  div:nth-child(3){
+    img{
+      position: relative;
+      bottom: 10px;
+    }
+  }
+  .banner{
+    .image_user{
+      max-width: 350px;
+      width: 100%;
+      height: 313px;
+      background-color: #eeeef0;
+      display: inline-block;
+      overflow: hidden;
+      position: relative;
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  @include max-screen(1200px){
+    .buy{
+      p{
+        margin-right: 49px;
+      }
+    }
+  }
+  @include max-screen(991px){
+    .buy{
+      background-image: url("../img/buy_canvas_adaptive.svg");
+      width: 100%;
+      p{
+        margin-right: 0;
+      }
+    }
+    .banner{
+      .image_user{
+        max-width: 100%;
+        width: 100%;
+        img{
+          position: relative;
+          bottom: 175px;
+        }
+      }
+    }
+  }
+  @include max-screen(767px){
+    .buy{
+      background-image: url("../img/buy_canvas_adaptive_two.svg");
+    }
+  }
+  @include max-screen(575px){
+    .buy{
+      background-image: url("../img/buy_canvas_daptive_three.svg");
+    }
   }
 }
 footer{
